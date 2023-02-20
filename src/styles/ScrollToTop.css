@@ -1,0 +1,11 @@
+.scrollToTop {
+    width: 35px;
+    height: 35px;
+    object-fit: cover;
+    position: fixed;
+    top: 90%;
+    right: 2%;
+    float: right;
+    cursor: pointer;
+    z-index: 999;
+}

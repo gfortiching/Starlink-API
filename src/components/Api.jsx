@@ -3,6 +3,7 @@ import axios from 'axios';
 import '/src/styles/Api.css'
 import Loading from './Loading';
 
+
 function Api() {
   const [isLoading, setIsLoading] = useState(true);
   const [data, setData] = useState([]);
@@ -59,7 +60,7 @@ function Api() {
         <ul>
         <input
           type="text"
-          placeholder="Search here..."
+          placeholder="Enter Mission Name here..."
           value={search}
           onChange={handleSearch}
         />
@@ -68,6 +69,7 @@ function Api() {
               <li 
                 key={launch.flight_number} 
                 className='box'>
+              <div>
               <span className='d-flex align-items-center'>
                 <h2>{launch.mission_name}</h2>
                 <sup>{isUpcoming(launch) ? (
@@ -77,13 +79,14 @@ function Api() {
                   )}
                 </sup>
               </span>
-
               <h4>{launch.launch_year}</h4>
-              <div>
               <button onClick={() => toggleDetails(index)} className="view-details">View Details</button>
+              </div>
+
+              <div>
                 {!hidden[index] ? 
                 <p className='details'>{launch.details}</p> : 
-                <div>
+                <div className='p-4'>
                   <p className="show-details">Flight No. {launch.flight_number}</p>
                   <p className='show-details'>Launch Date (UTC): {launch.launch_date_utc}</p>
                   <p className='show-details'>Launch Update: {success ? "Successful." : "Unsuccessful."}</p>
@@ -91,6 +94,7 @@ function Api() {
                   <p className='show-details'>{launch.details}</p>
                 </div>}
               </div>
+
               </li>
           ))}
 
