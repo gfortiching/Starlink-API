@@ -1,0 +1,19 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+}
+
+.header {
+    padding: 15px 5%;
+    background-color: #FF7641;
+    color: #ffffff;
+    text-align: start;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 999;
+}
+

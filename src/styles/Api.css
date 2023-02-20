@@ -1,0 +1,80 @@
+.api-layout {
+    padding: 5%;
+}
+
+@media all and (max-width: 576px) {
+    .api-layout {
+        padding: 10% 5%;
+    }
+}
+
+.api-layout ul {
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+    margin: 0;
+    padding: 0;
+}
+
+.api-layout li {
+    list-style: none;
+    margin: 2% 0;
+}
+
+.box {
+    padding: 20px;
+    border: 0;
+    border-radius: 10px;
+    box-shadow: 0 0 3px black;
+    background-color: rgb(202, 216, 225);
+}
+
+.view-details {
+    margin-top: 20px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: 0;
+    background-color: #ff7641;
+    color: white;
+}
+
+.view-details:hover {
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: 0;
+    background-color: #562918;
+    color: white;
+    transition: ease-in-out 0.5s;
+}
+
+.details {
+    display: none;
+}
+
+.show-details {
+    display: flex;
+    margin: 10px auto;
+}
+
+.api-layout input {
+    width: 250px;
+    margin: 50px auto;
+    padding: 10px;
+    border: 0;
+    background-color: rgb(202, 216, 225);
+}
+
+.upcoming {
+    display: inline-flex;
+    margin-left: 10px;
+    font-weight: 900;
+    color: rgb(26, 60, 144);
+}
+
+.launched {
+    display: inline-flex;
+    margin-left: 10px;
+    font-weight: 900;
+    color: rgb(50, 144, 26);
+    font-size: 16px;
+}
